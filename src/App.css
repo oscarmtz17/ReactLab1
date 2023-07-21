@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* App.css */
+
+
+/* Add a custom font family */
+
+body {
+    font-family: "Arial", sans-serif;
 }
+
+.App {
+    text-align: center;
+}
+
+
+/* Increase the size of the logo */
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 60vmin;
+    pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
+/* Change the background color of the header */
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #007bff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(12px + 2vmin);
+    /* Increase the base font size */
+    color: white;
 }
+
+
+/* Increase the font size of the link */
 
 .App-link {
-  color: #61dafb;
+    color: #ff4500;
+    /* Change the link color */
+    font-size: 18px;
+    /* Set a fixed font size for the link */
+    text-decoration: none;
+    /* Remove underline from the link */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Remove the spinning animation for the logo */
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: none;
+    }
+}
+
+
+/* Add a box shadow and padding to the counter */
+
+.counter {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+
+/* Add some margin to the buttons */
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+/* Style the increment and decrement buttons */
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    /* Change the button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/* Add hover effect for buttons */
+
+button:hover {
+    background-color: #218838;
+    /* Darken the button color on hover */
 }
